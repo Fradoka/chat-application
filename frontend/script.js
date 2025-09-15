@@ -1,4 +1,4 @@
-const socket = io();
+const socket = io("https://fradoka-group-chat-app-backend.hosting.codeyourfuture.io");
 
 const messagesDiv = document.getElementById('messages');
 const usernameInput = document.getElementById('usernameInput');
