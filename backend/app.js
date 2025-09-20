@@ -8,13 +8,13 @@ const server = http.createServer(app);
 // Enable CORS for Socket.IO
 const io = new Server(server, {
   cors: {
-    origin: ["http://localhost:3000", "https://fradoka-group-chat-app-frontend.hosting.codeyourfuture.io"], // allowed frontend URLs
+    origin: ["http://127.0.0.1:5500", "http://localhost:3000", "https://fradoka-group-chat-app-frontend.hosting.codeyourfuture.io"], // allowed frontend URLs
     methods: ["GET", "POST"]
   }
 });
 
 app.use(cors({
-  origin: ["http://localhost:3000", "https://fradoka-group-chat-app-frontend.hosting.codeyourfuture.io"]
+  origin: ["http://127.0.0.1:5500", "http://localhost:3000", "https://fradoka-group-chat-app-frontend.hosting.codeyourfuture.io"]
 }));
 
 
